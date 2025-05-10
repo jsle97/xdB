@@ -1,6 +1,6 @@
 #   XDB.js: A Powerful and Lightweight JSON Database for Node.js! ![XDB Banner](https://jsle.eu/xdB/xdb-banner.png)
 
-**Version:** 6.4.0 | **License:** MIT | **Node.js:** ≥18.0.0 | **Zero Dependencies:** Yes!
+**Public version:** 1.0.0 (real: 6.4.1) | **License:** MIT | **Node.js:** ≥18.0.0 | **Zero Dependencies:** Yes!
 
 ##   Discover the Power of Simplicity
 

@@ -1,57 +1,139 @@
-# XDB.js: Revolutionize Your Data with the Ultimate JSON Database for Node.js!
+#   XDB.js: A Powerful and Lightweight JSON Database for Node.js! ![XDB Banner](https://jsle.eu/xdB/xdb-banner.png)
 
-![XDB Banner](https://jsle.eu/xdB/xdb-banner.png)
 **Version:** 6.4.0 | **License:** MIT | **Node.js:** ≥18.0.0 | **Zero Dependencies:** Yes!
 
-## Discover the Power of Simple Perfection
-XDB.js is the pinnacle of database evolution – a lightweight yet powerful JSON-based system that ditches the complexity of traditional databases. Imagine building apps without the headache of servers, connections, or endless setup. XDB.js blends the ease of file-based storage with advanced features like indexing, relationships, schema validation, and more, making your projects faster, safer, and easier to manage. It's the perfect tool for developers who want to focus on creating, not fighting technology!
+##   Discover the Power of Simplicity
 
-## Why XDB.js is a Game-Changer
-XDB.js cuts out the bloat of traditional databases while delivering their best features. Designed for apps where speed and minimal setup are key, but data integrity and relationships still matter, it's a revolution in data storage. Your data lives in readable JSON files, meaning you can easily inspect, edit, and track changes like it's just another text file.
+XDB.js is a powerful yet lightweight JSON-based database system for Node.js that simplifies data management by reducing the complexity of traditional databases. Imagine building applications without the overhead of servers, complex connections, or lengthy setup processes. XDB.js combines the ease of file-based storage with robust features such as indexing, relationships, schema validation, and more, enabling faster, safer, and more manageable projects. It's an ideal choice for developers who want to focus on development rather than database administration.
 
-### Key Features That Change the Game
-- **Zero Dependencies:** No external libraries – pure, standalone power.
-- **Full CRUD Operations:** An intuitive interface for handling JSON data in a simple, efficient way.
-- **Atomic Operations:** Guaranteed data integrity, even during failures – your info is always safe.
-- **Indexing Engine:** Lightning-fast searches that supercharge your apps.
-- **Schema Validation:** Keep your data pristine with built-in JSON validation.
-- **Relationship Management:** Effortlessly define and navigate 1:1, 1:N, and N:M relationships – like pro databases, without the hassle.
-- **Event System:** Plug into operation lifecycles for custom logic and automation.
-- **Backup System:** Automatic backups and recovery for peace of mind.
-- **Concurrency Control:** File locking prevents conflicts, ensuring smooth operations.
-- **Advanced Querying:** Filter, sort, and paginate with ease.
-- **Promise-Based API:** Clean, async workflows that make coding a joy.
+##   Why XDB.js is a Great Choice
 
-### When XDB.js Becomes Your Hero
-XDB.js is ideal for:
-- Rapid prototypes and MVPs where time is everything.
-- Small to medium apps that need power without the overload.
-- Desktop apps on Node.js, like Electron or NW.js.
-- Scenarios where you want to skip configuration headaches.
-- Projects with naturally JSON-structured data.
-- Anyone for whom SQL is overkill and basic file I/O isn't enough.
+XDB.js eliminates the bloat of conventional databases while providing essential features. Designed for applications where speed and minimal setup are crucial, yet data integrity and relationships are still important, it offers a streamlined approach to data storage. Your data is stored in easily readable JSON files, allowing for straightforward inspection, editing, and change tracking, similar to working with regular text files.
 
-Get ready for an explosion of productivity!
+###   Key Features
 
-## How to Kickstart Your Adventure
-Getting started with XDB.js is a breeze – download it and integrate it into your project to start building right away. Configuration is a delight: set basic options like data file paths, logging levels, or indexing settings, and you're off to the races.
+* **Zero Dependencies:** Operates independently without reliance on external libraries.
+* **Full CRUD Operations:** Provides an intuitive interface for efficient JSON data handling.
+* **Atomic Operations:** Ensures data integrity even in the event of failures.
+* **Indexing Engine:** Enables rapid data searches, boosting application performance.
+* **Schema Validation:** Maintains data consistency with built-in JSON schema validation.
+* **Relationship Management:** Simplifies the definition and management of 1:1, 1:N, and N:M relationships.
+* **Event System:** Allows integration with operation lifecycles for custom logic and automation.
+* **Backup System:** Offers automatic backups and recovery for data safety.
+* **Concurrency Control:** Prevents conflicts through file locking, ensuring smooth operation.
+* **Advanced Querying:** Facilitates easy filtering, sorting, and pagination.
+* **Promise-Based API:** Supports clean, asynchronous workflows for improved coding efficiency.
 
-## Core Concepts That Shift Perspectives
-Data in XDB.js is stored in standard JSON files, making it human-readable and developer-friendly. Every record gets a unique ID, and operations are atomic to ensure safety and prevent corruption. Concurrency control with file locking means everything runs smoothly, even in multi-threaded environments.
+###   When to Use XDB.js
 
-## Advanced Features That Elevate Your Project
-From a powerful indexing system that speeds up searches to schema validation for data purity – XDB.js delivers tools that make your apps not just functional, but rock-solid. Relationship management lets you navigate data connections effortlessly, while the event system lets you extend functionality on the fly. Backups run in the background, protecting your data from surprises.
+XDB.js is particularly well-suited for:
 
-## Example Applications That Inspire
-Picture building a full blog system with users, posts, and comments – all integrated, secure, and scalable. Or an authentication setup with registration, login, and sessions that works like a dream. XDB.js makes projects like these not only possible but exhilarating!
+* Rapid prototyping and MVPs where speed is essential.
+* Small to medium-sized applications requiring robust functionality without excessive complexity.
+* Node.js desktop applications, such as those built with Electron or NW.js.
+* Projects where minimal configuration is desired.
+* Applications with naturally JSON-structured data.
+* Situations where SQL databases are too cumbersome and basic file I/O is insufficient.
 
-## Best Practices for Success
-Organize your data logically, optimize performance with indexing, and safeguard integrity through validation. XDB.js encourages smart design that maximizes benefits and minimizes issues.
+Experience a significant boost in productivity!
 
-## Comparison with Alternatives – XDB.js Wins!
-Compared to other solutions, XDB.js shines in simplicity and power. In rankings for ease of setup, zero dependencies, or relationship handling, XDB.js dominates. Against SQLite or MongoDB, it's the go-to for speed and flexibility without compromises.
+##   Getting Started
 
-## Join the Revolution – Under the MIT License!
-XDB.js isn't just a tool; it's the future of databases. Join me and discover how easy it is to create amazing things. Available under the open MIT license – download, modify, and share freely!
+XDB.js is easy to integrate into your projects. Simply download and incorporate it to begin building immediately. Configuration is straightforward, involving setting basic options like data file paths, logging levels, and indexing settings.
 
-Ready for the adventure? XDB.js is waiting to transform your coding world!
+##   Core Concepts
+
+XDB.js stores data in standard JSON files, enhancing readability and ease of use. Each record is assigned a unique ID, and operations are atomic to guarantee data integrity. Concurrency control, using file locking, ensures stable performance in multi-threaded environments.
+
+##   Advanced Capabilities
+
+XDB.js provides advanced tools to enhance your applications, from a powerful indexing system for fast searches to schema validation for maintaining data integrity. Relationship management simplifies the navigation of data connections, while the event system allows for dynamic functionality extensions. Background backups protect your data from unexpected events.
+
+##   Example Applications
+
+Consider building a comprehensive blog system with users, posts, and comments, all seamlessly integrated, secure, and scalable. Or imagine developing an authentication system with smooth registration, login, and session management. XDB.js makes such projects not only feasible but also enjoyable!
+
+##   Best Practices
+
+For optimal results with XDB.js, organize your data logically, utilize indexing to enhance performance, and ensure data integrity through validation. XDB.js promotes efficient design practices to maximize benefits and minimize potential issues.
+
+##   Comparison to Alternatives
+
+XDB.js offers a compelling combination of simplicity and power.
+
+###   Lightweight JSON Database Comparison
+
+|   Feature                       |   XDB.js                                   |   lowdb                                     |   json-db                                  |   NeDB                                       |   json-storage                             |   unqlite                                     |
+| :---------------------------- | :----------------------------------------- | :---------------------------------------- | :--------------------------------------- | :------------------------------------------ | :----------------------------------------- | :------------------------------------------- |
+|   **Installation** |   ★★★★★ (Simple npm install)              |   ★★★★☆ (npm install)                       |   ★★★★☆ (npm install)                      |   ★★★★☆ (npm install)                       |   ★★★★★ (npm install)                      |   ★★★☆☆ (npm install, some native build) |
+|   **Configuration** |   ★★★★★ (Zero config default)            |   ★★★★☆ (Minimal file setup)              |   ★★★★☆ (File path required)             |   ★★★★☆ (File path required)                |   ★★★★☆ (File path required)                |   ★★★☆☆ (File path, more options)          |
+|   **API Learning Curve** |   ★★★★★ (Intuitive JS API)                |   ★★★★★ (Very simple API)                  |   ★★★★☆ (Standard JS ops)                 |   ★★★★☆ (MongoDB-like API)                  |   ★★★★☆ (Simple methods)                    |   ★★★☆☆ (C API, JS wrapper)                |
+|   **Zero External Dependencies** |   ★★★★★ (Pure JS)                          |   ★★★☆☆ (Uses lodash)                     |   ★★☆☆☆ (Multiple dependencies)            |   ★★★☆☆ (Uses loki)                         |   ★★★★☆ (Pure JS)                           |   ★★★☆☆ (Native lib)                       |
+|   **File Storage Structure** |   ★★★★★ (One file per "table")           |   ★★★★★ (One file per DB)                 |   ★★★★★ (One file per DB)                |   ★★★★☆ (Datafile + indexes)                |   ★★★★★ (One file per DB)                 |   ★★★★★ (Single DB file)                   |
+|   **Atomic Writes** |   ★★★★★ (File-level atomic)              |   ★★☆☆☆ (In-memory, risk of data loss)     |   ★★★☆☆ (File-level, basic)             |   ★★★☆☆ (File-level)                      |   ★★☆☆☆ (In-memory)                         |   ★★★★☆ (Transactional)                    |
+|   **Schema Validation Type** |   ★★★★☆ (JSON Schema)                      |   ★☆☆☆☆ (None)                            |   ★★☆☆☆ (Basic type checks)               |   ★☆☆☆☆ (None)                              |   ★☆☆☆☆ (None)                              |   ☆☆☆☆☆ (None)                               |
+|   **Rel. Definition** |   ★★★★☆ (Explicit JS config)             |   ☆☆☆☆☆ (None)                            |   ★☆☆☆☆ (None)                           |   ☆☆☆☆☆ (None)                              |   ☆☆☆☆☆ (None)                              |   ☆☆☆☆☆ (None)                               |
+|   **Rel. Querying** |   ★★★★☆ (Integrated methods)             |   ☆☆☆☆☆ (Manual filtering)                |   ★☆☆☆☆ (Manual filtering)               |   ☆☆☆☆☆ (Manual filtering)                  |   ☆☆☆☆☆ (Manual filtering)                  |   ☆☆☆☆☆ (None)                               |
+|   **Basic Querying** |   ★★★★★ (ID lookup)                      |   ★★★★★ (ID lookup)                       |   ★★★★★ (ID lookup)                      |   ★★★★★ (ID lookup)                         |   ★★★★★ (ID lookup)                       |   ★★★★★ (Key-value)                         |
+|   **Filtering** |   ★★★★☆ (Flexible functions)             |   ★★☆☆☆ (lodash methods)                  |   ★★★☆☆ (Basic filtering)                |   ★★★★☆ (MongoDB-like syntax)               |   ★★☆☆☆ (Basic filtering)                   |   ★★☆☆☆ (Limited)                           |
+|   **Sorting** |   ★★★★☆ (Multi-field, custom)            |   ★★☆☆☆ (lodash methods)                  |   ★★★☆☆ (Basic sorting)                  |   ★★★★☆ (Sort options)                      |   ★★☆☆☆ (None)                              |   ★★☆☆☆ (Limited)                           |
+|   **Joins** |   ★★★☆☆ (Programmatic)                 |   ☆☆☆☆☆ (None)                            |   ☆☆☆☆☆ (None)                           |   ☆☆☆☆☆ (None)                              |   ☆☆☆☆☆ (None)                              |   ☆☆☆☆☆ (None)                               |
+|   **Index Creation** |   ★★★★☆ (Configurable)                   |   ☆☆☆☆☆ (None)                            |   ★☆☆☆☆ (None)                           |   ★★★☆☆ (Automatic)                       |   ☆☆☆☆☆ (None)                              |   ★★☆☆☆ (Limited)                           |
+|   **Read Perf. (<1MB)** |   ★★★★☆ (Fast)                           |   ★★★★★ (Very fast)                       |   ★★★★☆ (Good)                           |   ★★★★☆ (Good)                              |   ★★★★★ (Fast)                            |   ★★★★☆ (Good)                               |
+|   **Write Perf. (<1MB)** |   ★★★★☆ (Fast)                           |   ★★★★★ (Fast)                          |   ★★★★☆ (Good)                           |   ★★★★☆ (Good)                              |   ★★★★★ (Fast)                            |   ★★★★☆ (Good)                               |
+|   **Read Perf. (1MB-100MB)** |   ★★★★☆ (Good)                           |   ★★★☆☆ (Moderate)                        |   ★★★☆☆ (Moderate)                     |   ★★★☆☆ (Moderate)                        |   ★★☆☆☆ (Slower)                            |   ★★★☆☆ (Moderate)                         |
+|   **Write Perf. (1MB-100MB)** |   ★★★★☆ (Good)                           |   ★★★☆☆ (Moderate)                        |   ★★★☆☆ (Moderate)                     |   ★★★☆☆ (Moderate)                        |   ★★☆☆☆ (Slower)                            |   ★★★☆☆ (Moderate)                         |
+|   **Read Perf. (>100MB)** |   ★★★☆☆ (Scales decently)                |   ★☆☆☆☆ (Poor)                            |   ★★☆☆☆ (Poor)                           |   ★★★☆☆ (Decent)                          |   ★☆☆☆☆ (Very slow)                       |   ★★★☆☆ (Decent)                           |
+|   **Write Perf. (>100MB)** |   ★★★☆☆ (Scales decently)                |   ★☆☆☆☆ (Poor)                            |   ★★☆☆☆ (Poor)                           |   ★★★☆☆ (Decent)                          |   ★☆☆☆☆ (Very slow)                       |   ★★★☆☆ (Decent)                           |
+|   **Concurrency Control Type** |   ★★★★☆ (File locking)                   |   ★☆☆☆☆ (None)                            |   ★★☆☆☆ (Basic file locking)             |   ★★★☆☆ (File-level)                      |   ★☆☆☆☆ (None)                              |   ★★★☆☆ (Transactions)                     |
+|   **Concurrency Granularity** |   ★★★★☆ (File)                             |   ★☆☆☆☆ (None)                            |   ★★☆☆☆ (File)                           |   ★★★☆☆ (File)                            |   ★☆☆☆☆ (None)                              |   ★★★☆☆ (DB)                               |
+|   **Event System Flexibility** |   ★★★★★ (Comprehensive hooks)            |   ☆☆☆☆☆ (None)                            |   ☆☆☆☆☆ (None)                           |   ☆☆☆☆☆ (None)                              |   ☆☆☆☆☆ (None)                              |   ☆☆☆☆☆ (None)                               |
+|   **Backup Type** |   ★★★★☆ (Automatic, configurable)        |   ☆☆☆☆☆ (Manual only)                     |   ☆☆☆☆☆ (Manual only)                    |   ☆☆☆☆☆ (Manual only)                       |   ☆☆☆☆☆ (Manual only)                       |   ☆☆☆☆☆ (Manual only)                        |
+|   **Documentation Quality** |   ★★★★★ (Detailed, examples)             |   ★★★★☆ (Good, clear)                       |   ★★★☆☆ (Basic)                          |   ★★★★☆ (Comprehensive)                   |   ★★☆☆☆ (Limited)                           |   ★★★☆☆ (Decent)                           |
+|   **Community Size** |   ☆☆☆☆☆ (Solo dev)                       |   ★★★★☆ (Active community)                |   ★★★☆☆ (Moderate)                       |   ★★★★☆ (Active community)                  |   ★★☆☆☆ (Small)                             |   ★★☆☆☆ (Small)                              |
+|   **Development Activity** |   ★★★★★ (Regular updates)                |   ★★★☆☆ (Occasional updates)              |   ★★★☆☆ (Occasional updates)             |   ★★☆☆☆ (Less active)                       |   ★★☆☆☆ (Less active)                       |   ★★☆☆☆ (Less active)                        |
+
+###   Comparison with Traditional Database Systems
+
+|   Feature                   |   XDB.js                               |   SQLite                                 |   MongoDB                                  |
+| :------------------------ | :------------------------------------- | :--------------------------------------- | :----------------------------------------- |
+|   **Setup Complexity** |   ★☆☆☆☆ (Zero setup, file-based)     |   ★★★☆☆ (Requires installation)          |   ★★★★☆ (Server setup, configuration)      |
+|   **Learning Curve** |   ★☆☆☆☆ (Simple JS API)              |   ★★★☆☆ (SQL knowledge required)         |   ★★★☆☆ (NoSQL, complex concepts)          |
+|   **Schema Flexibility** |   ★★★★★ (Highly flexible JSON)       |   ★★☆☆☆ (Strict, predefined schema)      |   ★★★★☆ (Flexible, schema-less)            |
+|   **Relationship Management** |   ★★★☆☆ (Programmatic management)    |   ★★★★★ (Built-in relational model)      |   ★★★☆☆ (Manual, application-level)        |
+|   **Indexing & Performance** |   ★★★☆☆ (Configurable indexing)      |   ★★★★☆ (Optimized indexing)             |   ★★★★★ (Advanced indexing)               |
+|   **Querying Power** |   ★★★☆☆ (Flexible JS functions)      |   ★★★★★ (Powerful SQL queries)           |   ★★★★★ (Rich NoSQL query language)        |
+|   **Scalability** |   ★★☆☆☆ (Limited horizontal scale)   |   ★★★☆☆ (Good vertical scale)            |   ★★★★★ (Excellent horizontal scale)      |
+|   **Use Case Alignment** |   ★★★★★ (Small/medium Node.js apps) |   ★★★★☆ (Embedded, mobile, desktop)      |   ★★★☆☆ (Large-scale, distributed systems) |
+
+##   Join the Community - MIT License
+
+XDB.js is more than just a tool; it represents a forward-thinking approach to databases. Join the community and discover the ease of creating powerful applications. Released under the open-source MIT license, it's free to download, modify, and share!
+
+## License
+
+XDB.js is released under the MIT License.
+
+```
+MIT License
+
+Copyright (c) 2025 Jakub Śledzikowski
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+```

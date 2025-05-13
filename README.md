@@ -61,50 +61,35 @@ For optimal results with XDB.js, organize your data logically, utilize indexing 
 
 XDB.js offers a compelling combination of simplicity and power.
 
-###   Lightweight JSON Database Comparison
+### Lightweight JSON Database Comparison
 
-|   Feature                       |   XDB.js                                   |   lowdb                                     |   json-db                                  |   NeDB                                       |   json-storage                             |   unqlite                                     |
-| :---------------------------- | :----------------------------------------- | :---------------------------------------- | :--------------------------------------- | :------------------------------------------ | :----------------------------------------- | :------------------------------------------- |
-|   **Installation** |   ★★★★★ (Simple npm install)              |   ★★★★☆ (npm install)                       |   ★★★★☆ (npm install)                      |   ★★★★☆ (npm install)                       |   ★★★★★ (npm install)                      |   ★★★☆☆ (npm install, some native build) |
-|   **Configuration** |   ★★★★★ (Zero config default)            |   ★★★★☆ (Minimal file setup)              |   ★★★★☆ (File path required)             |   ★★★★☆ (File path required)                |   ★★★★☆ (File path required)                |   ★★★☆☆ (File path, more options)          |
-|   **API Learning Curve** |   ★★★★★ (Intuitive JS API)                |   ★★★★★ (Very simple API)                  |   ★★★★☆ (Standard JS ops)                 |   ★★★★☆ (MongoDB-like API)                  |   ★★★★☆ (Simple methods)                    |   ★★★☆☆ (C API, JS wrapper)                |
-|   **Zero External Dependencies** |   ★★★★★ (Pure JS)                          |   ★★★☆☆ (Uses lodash)                     |   ★★☆☆☆ (Multiple dependencies)            |   ★★★☆☆ (Uses loki)                         |   ★★★★☆ (Pure JS)                           |   ★★★☆☆ (Native lib)                       |
-|   **File Storage Structure** |   ★★★★★ (One file per "table")           |   ★★★★★ (One file per DB)                 |   ★★★★★ (One file per DB)                |   ★★★★☆ (Datafile + indexes)                |   ★★★★★ (One file per DB)                 |   ★★★★★ (Single DB file)                   |
-|   **Atomic Writes** |   ★★★★★ (File-level atomic)              |   ★★☆☆☆ (In-memory, risk of data loss)     |   ★★★☆☆ (File-level, basic)             |   ★★★☆☆ (File-level)                      |   ★★☆☆☆ (In-memory)                         |   ★★★★☆ (Transactional)                    |
-|   **Schema Validation Type** |   ★★★★☆ (JSON Schema)                      |   ★☆☆☆☆ (None)                            |   ★★☆☆☆ (Basic type checks)               |   ★☆☆☆☆ (None)                              |   ★☆☆☆☆ (None)                              |   ☆☆☆☆☆ (None)                               |
-|   **Rel. Definition** |   ★★★★☆ (Explicit JS config)             |   ☆☆☆☆☆ (None)                            |   ★☆☆☆☆ (None)                           |   ☆☆☆☆☆ (None)                              |   ☆☆☆☆☆ (None)                              |   ☆☆☆☆☆ (None)                               |
-|   **Rel. Querying** |   ★★★★☆ (Integrated methods)             |   ☆☆☆☆☆ (Manual filtering)                |   ★☆☆☆☆ (Manual filtering)               |   ☆☆☆☆☆ (Manual filtering)                  |   ☆☆☆☆☆ (Manual filtering)                  |   ☆☆☆☆☆ (None)                               |
-|   **Basic Querying** |   ★★★★★ (ID lookup)                      |   ★★★★★ (ID lookup)                       |   ★★★★★ (ID lookup)                      |   ★★★★★ (ID lookup)                         |   ★★★★★ (ID lookup)                       |   ★★★★★ (Key-value)                         |
-|   **Filtering** |   ★★★★☆ (Flexible functions)             |   ★★☆☆☆ (lodash methods)                  |   ★★★☆☆ (Basic filtering)                |   ★★★★☆ (MongoDB-like syntax)               |   ★★☆☆☆ (Basic filtering)                   |   ★★☆☆☆ (Limited)                           |
-|   **Sorting** |   ★★★★☆ (Multi-field, custom)            |   ★★☆☆☆ (lodash methods)                  |   ★★★☆☆ (Basic sorting)                  |   ★★★★☆ (Sort options)                      |   ★★☆☆☆ (None)                              |   ★★☆☆☆ (Limited)                           |
-|   **Joins** |   ★★★☆☆ (Programmatic)                 |   ☆☆☆☆☆ (None)                            |   ☆☆☆☆☆ (None)                           |   ☆☆☆☆☆ (None)                              |   ☆☆☆☆☆ (None)                              |   ☆☆☆☆☆ (None)                               |
-|   **Index Creation** |   ★★★★☆ (Configurable)                   |   ☆☆☆☆☆ (None)                            |   ★☆☆☆☆ (None)                           |   ★★★☆☆ (Automatic)                       |   ☆☆☆☆☆ (None)                              |   ★★☆☆☆ (Limited)                           |
-|   **Read Perf. (<1MB)** |   ★★★★☆ (Fast)                           |   ★★★★★ (Very fast)                       |   ★★★★☆ (Good)                           |   ★★★★☆ (Good)                              |   ★★★★★ (Fast)                            |   ★★★★☆ (Good)                               |
-|   **Write Perf. (<1MB)** |   ★★★★☆ (Fast)                           |   ★★★★★ (Fast)                          |   ★★★★☆ (Good)                           |   ★★★★☆ (Good)                              |   ★★★★★ (Fast)                            |   ★★★★☆ (Good)                               |
-|   **Read Perf. (1MB-100MB)** |   ★★★★☆ (Good)                           |   ★★★☆☆ (Moderate)                        |   ★★★☆☆ (Moderate)                     |   ★★★☆☆ (Moderate)                        |   ★★☆☆☆ (Slower)                            |   ★★★☆☆ (Moderate)                         |
-|   **Write Perf. (1MB-100MB)** |   ★★★★☆ (Good)                           |   ★★★☆☆ (Moderate)                        |   ★★★☆☆ (Moderate)                     |   ★★★☆☆ (Moderate)                        |   ★★☆☆☆ (Slower)                            |   ★★★☆☆ (Moderate)                         |
-|   **Read Perf. (>100MB)** |   ★★★☆☆ (Scales decently)                |   ★☆☆☆☆ (Poor)                            |   ★★☆☆☆ (Poor)                           |   ★★★☆☆ (Decent)                          |   ★☆☆☆☆ (Very slow)                       |   ★★★☆☆ (Decent)                           |
-|   **Write Perf. (>100MB)** |   ★★★☆☆ (Scales decently)                |   ★☆☆☆☆ (Poor)                            |   ★★☆☆☆ (Poor)                           |   ★★★☆☆ (Decent)                          |   ★☆☆☆☆ (Very slow)                       |   ★★★☆☆ (Decent)                           |
-|   **Concurrency Control Type** |   ★★★★☆ (File locking)                   |   ★☆☆☆☆ (None)                            |   ★★☆☆☆ (Basic file locking)             |   ★★★☆☆ (File-level)                      |   ★☆☆☆☆ (None)                              |   ★★★☆☆ (Transactions)                     |
-|   **Concurrency Granularity** |   ★★★★☆ (File)                             |   ★☆☆☆☆ (None)                            |   ★★☆☆☆ (File)                           |   ★★★☆☆ (File)                            |   ★☆☆☆☆ (None)                              |   ★★★☆☆ (DB)                               |
-|   **Event System Flexibility** |   ★★★★★ (Comprehensive hooks)            |   ☆☆☆☆☆ (None)                            |   ☆☆☆☆☆ (None)                           |   ☆☆☆☆☆ (None)                              |   ☆☆☆☆☆ (None)                              |   ☆☆☆☆☆ (None)                               |
-|   **Backup Type** |   ★★★★☆ (Automatic, configurable)        |   ☆☆☆☆☆ (Manual only)                     |   ☆☆☆☆☆ (Manual only)                    |   ☆☆☆☆☆ (Manual only)                       |   ☆☆☆☆☆ (Manual only)                       |   ☆☆☆☆☆ (Manual only)                        |
-|   **Documentation Quality** |   ★★★★★ (Detailed, examples)             |   ★★★★☆ (Good, clear)                       |   ★★★☆☆ (Basic)                          |   ★★★★☆ (Comprehensive)                   |   ★★☆☆☆ (Limited)                           |   ★★★☆☆ (Decent)                           |
-|   **Community Size** |   ☆☆☆☆☆ (Solo dev)                       |   ★★★★☆ (Active community)                |   ★★★☆☆ (Moderate)                       |   ★★★★☆ (Active community)                  |   ★★☆☆☆ (Small)                             |   ★★☆☆☆ (Small)                              |
-|   **Development Activity** |   ★★★★★ (Regular updates)                |   ★★★☆☆ (Occasional updates)              |   ★★★☆☆ (Occasional updates)             |   ★★☆☆☆ (Less active)                       |   ★★☆☆☆ (Less active)                       |   ★★☆☆☆ (Less active)                        |
+| Feature                  | XDB.js | lowdb  | json-db | NeDB   |
+|--------------------------|:------:|:------:|:-------:|:------:|
+| Installation             | ★★★★★  | ★★★★☆  | ★★★★☆   | ★★☆☆☆  |
+| Configuration            | ★★★★★  | ★★★★☆  | ★★★★☆   | ★★★☆☆  |
+| API Intuitiveness        | ★★★★★  | ★★★★★  | ★★★★☆   | ★★★☆☆  |
+| Zero Dependencies        | ★★★★★  | ★★★☆☆  | ★★☆☆☆   | ★★★☆☆  |
+| File Storage Structure   | ★★★★★  | ★★★★★  | ★★★★★   | ★★★☆☆  |
+| Atomic Operations        | ★★★★★  | ★★☆☆☆  | ★★★☆☆   | ★★★☆☆  |
+| Schema Validation        | ★★★★☆  | ★☆☆☆☆  | ★★☆☆☆   | ★☆☆☆☆  |
+| Relationship Management  | ★★★★☆  | ☆☆☆☆☆  | ★☆☆☆☆   | ☆☆☆☆☆  |
+| Read Performance (<1MB)  | ★★★★☆  | ★★★★★  | ★★★★☆   | ★★★☆☆  |
+| Write Performance (<1MB) | ★★★★☆  | ★★★★★  | ★★★★☆   | ★★★☆☆  |
+| Backup Options           | ★★★★☆  | ☆☆☆☆☆  | ☆☆☆☆☆   | ☆☆☆☆☆  |
+| Documentation Quality    | ★★★★★  | ★★★★☆  | ★★★☆☆   | ★★☆☆☆  |
 
-###   Comparison with Traditional Database Systems
+---
 
-|   Feature                   |   XDB.js                               |   SQLite                                 |   MongoDB                                  |
-| :------------------------ | :------------------------------------- | :--------------------------------------- | :----------------------------------------- |
-|   **Setup Complexity** |   ★☆☆☆☆ (Zero setup, file-based)     |   ★★★☆☆ (Requires installation)          |   ★★★★☆ (Server setup, configuration)      |
-|   **Learning Curve** |   ★☆☆☆☆ (Simple JS API)              |   ★★★☆☆ (SQL knowledge required)         |   ★★★☆☆ (NoSQL, complex concepts)          |
-|   **Schema Flexibility** |   ★★★★★ (Highly flexible JSON)       |   ★★☆☆☆ (Strict, predefined schema)      |   ★★★★☆ (Flexible, schema-less)            |
-|   **Relationship Management** |   ★★★☆☆ (Programmatic management)    |   ★★★★★ (Built-in relational model)      |   ★★★☆☆ (Manual, application-level)        |
-|   **Indexing & Performance** |   ★★★☆☆ (Configurable indexing)      |   ★★★★☆ (Optimized indexing)             |   ★★★★★ (Advanced indexing)               |
-|   **Querying Power** |   ★★★☆☆ (Flexible JS functions)      |   ★★★★★ (Powerful SQL queries)           |   ★★★★★ (Rich NoSQL query language)        |
-|   **Scalability** |   ★★☆☆☆ (Limited horizontal scale)   |   ★★★☆☆ (Good vertical scale)            |   ★★★★★ (Excellent horizontal scale)      |
-|   **Use Case Alignment** |   ★★★★★ (Small/medium Node.js apps) |   ★★★★☆ (Embedded, mobile, desktop)      |   ★★★☆☆ (Large-scale, distributed systems) |
+### Comparison with Traditional Databases
+
+| Feature                  | XDB.js | SQLite  | MongoDB |
+|--------------------------|:------:|:-------:|:-------:|
+| Setup Complexity         | ★☆☆☆☆  | ★★★☆☆   | ★★★★☆   |
+| Schema Flexibility       | ★★★★★  | ★★☆☆☆   | ★★★★☆   |
+| Relationship Management  | ★★★☆☆  | ★★★★★   | ★★★☆☆   |
+| Indexing and Performance | ★★★☆☆  | ★★★★☆   | ★★★★★   |
+| Scalability              | ★★☆☆☆  | ★★★☆☆   | ★★★★★   |
+| Node.js Usability        | ★★★★★  | ★★★★☆   | ★★★☆☆   |
 
 ##   Join the Community - MIT License
 

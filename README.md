@@ -1,103 +1,346 @@
-#   XDB.js: A Powerful and Lightweight JSON Database for Node.js! ![XDB Banner](https://jsle.eu/xdB/xdb-banner.png)
+# xdB: File Management Library Collection for Node.js
 
-**Public version:** 1.0.0 (real: 6.4.1) | **License:** MIT | **Node.js:** ≥18.0.0 | **Zero Dependencies:** Yes!
+![XDB Banner](https://jsle.eu/xdb-baner2.png)
+ 
+**Version:** 1.0.0 | **License:** MIT | **Node.js:** ≥18.0.0 | **Zero Dependencies:** Yes!
 
-##   Discover the Power of Simplicity
+## 🚀 Discover the Power of Choice
 
-XDB.js is a powerful yet lightweight JSON-based database system for Node.js that simplifies data management by reducing the complexity of traditional databases. Imagine building applications without the overhead of servers, complex connections, or lengthy setup processes. XDB.js combines the ease of file-based storage with robust features such as indexing, relationships, schema validation, and more, enabling faster, safer, and more manageable projects. It's an ideal choice for developers who want to focus on development rather than database administration.
+xdB is a comprehensive collection of file and data management libraries for Node.js, designed to give you the perfect tool for every project need. From simple JSON databases to complete file management systems, choose the library that fits your requirements exactly – no bloat, no complexity you don't need.
 
-##   Why XDB.js is a Great Choice
-
-XDB.js eliminates the bloat of conventional databases while providing essential features. Designed for applications where speed and minimal setup are crucial, yet data integrity and relationships are still important, it offers a streamlined approach to data storage. Your data is stored in easily readable JSON files, allowing for straightforward inspection, editing, and change tracking, similar to working with regular text files.
-
-###   Key Features
-
-* **Zero Dependencies:** Operates independently without reliance on external libraries.
-* **Full CRUD Operations:** Provides an intuitive interface for efficient JSON data handling.
-* **Atomic Operations:** Ensures data integrity even in the event of failures.
-* **Indexing Engine:** Enables rapid data searches, boosting application performance.
-* **Schema Validation:** Maintains data consistency with built-in JSON schema validation.
-* **Relationship Management:** Simplifies the definition and management of 1:1, 1:N, and N:M relationships.
-* **Event System:** Allows integration with operation lifecycles for custom logic and automation.
-* **Backup System:** Offers automatic backups and recovery for data safety.
-* **Concurrency Control:** Prevents conflicts through file locking, ensuring smooth operation.
-* **Advanced Querying:** Facilitates easy filtering, sorting, and pagination.
-* **Promise-Based API:** Supports clean, asynchronous workflows for improved coding efficiency.
-
-###   When to Use XDB.js
-
-XDB.js is particularly well-suited for:
-
-* Rapid prototyping and MVPs where speed is essential.
-* Small to medium-sized applications requiring robust functionality without excessive complexity.
-* Node.js desktop applications, such as those built with Electron or NW.js.
-* Projects where minimal configuration is desired.
-* Applications with naturally JSON-structured data.
-* Situations where SQL databases are too cumbersome and basic file I/O is insufficient.
-
-Experience a significant boost in productivity!
-
-##   Getting Started
-
-XDB.js is easy to integrate into your projects. Simply download and incorporate it to begin building immediately. Configuration is straightforward, involving setting basic options like data file paths, logging levels, and indexing settings.
-
-##   Core Concepts
-
-XDB.js stores data in standard JSON files, enhancing readability and ease of use. Each record is assigned a unique ID, and operations are atomic to guarantee data integrity. Concurrency control, using file locking, ensures stable performance in multi-threaded environments.
-
-##   Advanced Capabilities
-
-XDB.js provides advanced tools to enhance your applications, from a powerful indexing system for fast searches to schema validation for maintaining data integrity. Relationship management simplifies the navigation of data connections, while the event system allows for dynamic functionality extensions. Background backups protect your data from unexpected events.
-
-##   Example Applications
-
-Consider building a comprehensive blog system with users, posts, and comments, all seamlessly integrated, secure, and scalable. Or imagine developing an authentication system with smooth registration, login, and session management. XDB.js makes such projects not only feasible but also enjoyable!
-
-##   Best Practices
-
-For optimal results with XDB.js, organize your data logically, utilize indexing to enhance performance, and ensure data integrity through validation. XDB.js promotes efficient design practices to maximize benefits and minimize potential issues.
-
-##   Comparison to Alternatives
-
-XDB.js offers a compelling combination of simplicity and power.
-
-### Lightweight JSON Database Comparison
-
-| Feature                  | XDB.js | lowdb  | json-db | NeDB   |
-|--------------------------|:------:|:------:|:-------:|:------:|
-| Installation             | ★★★★★  | ★★★★☆  | ★★★★☆   | ★★☆☆☆  |
-| Configuration            | ★★★★★  | ★★★★☆  | ★★★★☆   | ★★★☆☆  |
-| API Intuitiveness        | ★★★★★  | ★★★★★  | ★★★★☆   | ★★★☆☆  |
-| Zero Dependencies        | ★★★★★  | ★★★☆☆  | ★★☆☆☆   | ★★★☆☆  |
-| File Storage Structure   | ★★★★★  | ★★★★★  | ★★★★★   | ★★★☆☆  |
-| Atomic Operations        | ★★★★★  | ★★☆☆☆  | ★★★☆☆   | ★★★☆☆  |
-| Schema Validation        | ★★★★☆  | ★☆☆☆☆  | ★★☆☆☆   | ★☆☆☆☆  |
-| Relationship Management  | ★★★★☆  | ☆☆☆☆☆  | ★☆☆☆☆   | ☆☆☆☆☆  |
-| Read Performance (<1MB)  | ★★★★☆  | ★★★★★  | ★★★★☆   | ★★★☆☆  |
-| Write Performance (<1MB) | ★★★★☆  | ★★★★★  | ★★★★☆   | ★★★☆☆  |
-| Backup Options           | ★★★★☆  | ☆☆☆☆☆  | ☆☆☆☆☆   | ☆☆☆☆☆  |
-| Documentation Quality    | ★★★★★  | ★★★★☆  | ★★★☆☆   | ★★☆☆☆  |
+**Why choose xdB?** Because one size doesn't fit all. Whether you're building a quick prototype, a desktop application, or a complex data management system, we have the right tool for your specific use case.
 
 ---
 
+## 📚 Choose Your Perfect Tool
+
+### 🗃️ **xdFiles.js** - Complete File Management System
+**The powerhouse** for comprehensive file operations and data management.
+
+- **Full file system operations** (read, write, copy, move, stream)
+- **Advanced JSON database** with all premium features
+- **File streaming** for large files
+- **Encryption & compression** support
+- **File adapters** for different formats (JSON, text, binary)
+- **Event system** with hooks and watchers
+- **Backup & versioning** system
+
+**Perfect for:** Desktop applications, file processing systems, content management, data pipelines
+
+---
+
+### 🔗 **xdb.js** - Advanced JSON Database  
+**The complete database** with enterprise features.
+
+- **Full CRUD operations** with atomic writes
+- **Relationship management** (1:1, 1:N, N:M) with onDelete strategies
+- **Indexing engine** for fast queries
+- **Schema validation** with JSON Schema
+- **Backup system** with restore capabilities
+- **Event system** for operation lifecycle hooks
+- **Relation cache** with TTL
+
+**Perfect for:** Complex applications, data with relationships, systems requiring validation
+
+---
+
+### ⚡ **xdbLite.js** - Balanced Solution
+**The golden middle** - powerful yet simple.
+
+- **Essential CRUD operations** with file locking
+- **Caching system** for improved performance  
+- **Directory management** utilities
+- **File operations** (move, copy)
+- **Advanced querying** with filtering and sorting
+- **Configurable logging** system
+
+**Perfect for:** Medium applications, rapid prototyping, desktop apps, when you need more than nano but less than full
+
+---
+
+### 🎯 **xdbNano.js** - Minimalist Engine
+**The lightweight champion** for simple needs.
+
+- **Pure CRUD operations** only
+- **Minimal footprint** and maximum speed
+- **File locking** for data integrity
+- **Zero configuration** required
+
+**Perfect for:** Microservices, simple storage needs, embedded applications, when simplicity is key
+
+---
+
+### 🔄 **xdbLiteRelations.js** - Relations Extension
+**Add relationships** to your xdbLite setup.
+
+- **One-to-many relationships** with caching
+- **Many-to-many relationships** via junction tables
+- **Cascade operations** and integrity checks
+- **Relation cache** for performance
+
+**Perfect for:** Extending xdbLite when you need relationships but want to keep it lightweight
+
+---
+
+## 🎯 When to Use Each Library
+
+### Choose **xdFiles** when you need:
+- Complete file management capabilities
+- File streaming and processing
+- Multiple file format support
+- Desktop applications with file operations
+- Content management systems
+- Data transformation pipelines
+
+### Choose **xdb** when you need:
+- Complex data relationships
+- Schema validation and data integrity
+- Advanced querying and indexing
+- Enterprise-level features
+- Backup and recovery systems
+- Event-driven architectures
+
+### Choose **xdbLite** when you need:
+- Solid CRUD with some extras
+- File and directory management
+- Caching for better performance
+- Medium complexity applications
+- Balance between features and simplicity
+
+### Choose **xdbNano** when you need:
+- Pure simplicity and speed
+- Minimal resource usage
+- Quick prototypes
+- Embedded storage
+- Microservices with simple data needs
+
+### Choose **xdbLiteRelations** when you need:
+- xdbLite + relationship capabilities
+- Lightweight but connected data
+- Performance-focused relations
+
+---
+
+## 🚀 Quick Start Examples
+
+### xdFiles.js - File Management System
+```javascript
+import xdb from './xdFiles/xdFiles.js';
+
+// Configure the system
+await xdb.config({
+  basePath: './data',
+  cachingEnabled: true,
+  versioningEnabled: true,
+  indexingEnabled: true
+});
+
+// File operations
+await xdb.file.write('document.txt', 'Hello World');
+const content = await xdb.view.all('document.txt');
+
+// JSON database operations  
+await xdb.add.id('users.json', { name: 'Alice', email: 'alice@example.com' });
+const user = await xdb.view.id('users.json', userId);
+
+// File streaming
+const readStream = await xdb.stream('large-file.json').read();
+const writeStream = await xdb.stream('output.json').write();
+```
+
+### xdb.js - Advanced Database
+```javascript
+import xdb from './xdb-full/xdb.js';
+
+// Configure with relations and schemas
+await xdb.config({
+  basePath: './database',
+  enableSchemaValidation: true,
+  schemas: {
+    'users.json': { /* JSON Schema */ }
+  }
+});
+
+// Define relationships
+xdb.relations.define('userPosts', {
+  type: '1:N',
+  localFile: 'users.json',
+  foreignFile: 'posts.json',
+  localField: 'id',
+  foreignField: 'authorId',
+  onDelete: 'CASCADE'
+});
+
+// CRUD with relations
+const user = await xdb.add.id('users', { name: 'Bob' });
+await xdb.add.id('posts', { title: 'My Post', authorId: user.record.id });
+const userPosts = await xdb.relations.getRelated('userPosts', user.record.id);
+```
+
+### xdbLite.js - Balanced Solution
+```javascript
+import xdbLite from './xdb-another-versions/xdbLite.js';
+
+// Quick configuration
+await xdbLite.config({ 
+  basePath: './data', 
+  cachingEnabled: true 
+});
+
+// Essential operations
+await xdbLite.add.all('products', [
+  { name: 'Product 1', price: 100 },
+  { name: 'Product 2', price: 200 }
+]);
+
+// Advanced querying
+const expensive = await xdbLite.view.more('products', {
+  filter: product => product.price > 150,
+  sort: [{ key: 'price', order: 'desc' }],
+  limit: 10
+});
+```
+
+### xdbNano.js - Minimalist Engine
+```javascript
+import xdbNano from './xdb-another-versions/xdbNano.js';
+
+// Zero configuration needed
+xdbNano.setBasePath('./simple-data');
+
+// Pure CRUD operations
+const note = await xdbNano.add.id('notes', { text: 'Quick note' });
+await xdbNano.edit.id('notes', note.id, { text: 'Updated note' });
+const allNotes = await xdbNano.view.all('notes');
+await xdbNano.del.id('notes', note.id);
+```
+
+### xdbLiteRelations.js - Relations Extension
+```javascript
+import xdbLite from './xdb-another-versions/xdbLite.js';
+import relations from './xdb-another-versions/xdbLiteRelations.js';
+
+// Setup base + relations
+await xdbLite.config({ basePath: './data' });
+
+// Create one-to-many relationship
+await relations.createOneToMany({
+  fromCollection: 'users',
+  fromId: 'user123',
+  toCollection: 'orders',
+  toField: 'userId',
+  toIds: ['order1', 'order2']
+});
+
+// Get related data
+const userOrders = await relations.getRelated({
+  fromCollection: 'users',
+  fromId: 'user123',
+  toCollection: 'orders',
+  toField: 'userId'
+});
+```
+
+---
+
+## 📊 Library Comparison Matrix
+
+| Feature | xdFiles | xdb | xdbLite | xdbNano | Relations Extension |
+|---------|:-------:|:---:|:-------:|:-------:|:------------------:|
+| **Core CRUD** | ✅ | ✅ | ✅ | ✅ | - |
+| **File Operations** | ✅ | ❌ | ✅ | ❌ | - |
+| **File Streaming** | ✅ | ❌ | ❌ | ❌ | - |
+| **Relationships** | ✅ | ✅ | ❌ | ❌ | ✅ |
+| **Indexing** | ✅ | ✅ | ❌ | ❌ | - |
+| **Schema Validation** | ✅ | ✅ | ❌ | ❌ | - |
+| **Caching** | ✅ | ✅ | ✅ | ❌ | ✅ |
+| **Event System** | ✅ | ✅ | ❌ | ❌ | - |
+| **Backup/Versioning** | ✅ | ✅ | ❌ | ❌ | - |
+| **Encryption** | ✅ | ❌ | ❌ | ❌ | - |
+| **Bundle Size** | Large | Medium | Small | Tiny | Tiny |
+| **Complexity** | High | Medium | Low | Minimal | Low |
+
+---
+
+## 🆚 Comparison with Alternatives
+
+### Lightweight JSON Database Comparison
+
+| Feature | xdB Family | lowdb | json-db | NeDB |
+|---------|:----------:|:-----:|:-------:|:----:|
+| Installation | ★★★★★ | ★★★★☆ | ★★★★☆ | ★★☆☆☆ |
+| Configuration | ★★★★★ | ★★★★☆ | ★★★★☆ | ★★★☆☆ |
+| API Intuitiveness | ★★★★★ | ★★★★★ | ★★★★☆ | ★★★☆☆ |
+| Zero Dependencies | ★★★★★ | ★★★☆☆ | ★★☆☆☆ | ★★★☆☆ |
+| File Storage Structure | ★★★★★ | ★★★★★ | ★★★★★ | ★★★☆☆ |
+| Atomic Operations | ★★★★★ | ★★☆☆☆ | ★★★☆☆ | ★★★☆☆ |
+| Schema Validation | ★★★★☆ | ★☆☆☆☆ | ★★☆☆☆ | ★☆☆☆☆ |
+| Relationship Management | ★★★★☆ | ☆☆☆☆☆ | ★☆☆☆☆ | ☆☆☆☆☆ |
+| File Management | ★★★★★ | ☆☆☆☆☆ | ☆☆☆☆☆ | ☆☆☆☆☆ |
+| Read Performance (<1MB) | ★★★★☆ | ★★★★★ | ★★★★☆ | ★★★☆☆ |
+| Write Performance (<1MB) | ★★★★☆ | ★★★★★ | ★★★★☆ | ★★★☆☆ |
+| Backup Options | ★★★★☆ | ☆☆☆☆☆ | ☆☆☆☆☆ | ☆☆☆☆☆ |
+| Documentation Quality | ★★★★★ | ★★★★☆ | ★★★☆☆ | ★★☆☆☆ |
+
 ### Comparison with Traditional Databases
 
-| Feature                  | XDB.js | SQLite  | MongoDB |
-|--------------------------|:------:|:-------:|:-------:|
-| Setup Complexity         | ★☆☆☆☆  | ★★★☆☆   | ★★★★☆   |
-| Schema Flexibility       | ★★★★★  | ★★☆☆☆   | ★★★★☆   |
-| Relationship Management  | ★★★☆☆  | ★★★★★   | ★★★☆☆   |
-| Indexing and Performance | ★★★☆☆  | ★★★★☆   | ★★★★★   |
-| Scalability              | ★★☆☆☆  | ★★★☆☆   | ★★★★★   |
-| Node.js Usability        | ★★★★★  | ★★★★☆   | ★★★☆☆   |
+| Feature | xdB Family | SQLite | MongoDB |
+|---------|:----------:|:------:|:-------:|
+| Setup Complexity | ★☆☆☆☆ | ★★★☆☆ | ★★★★☆ |
+| Schema Flexibility | ★★★★★ | ★★☆☆☆ | ★★★★☆ |
+| Relationship Management | ★★★☆☆ | ★★★★★ | ★★★☆☆ |
+| Indexing and Performance | ★★★☆☆ | ★★★★☆ | ★★★★★ |
+| Scalability | ★★☆☆☆ | ★★★☆☆ | ★★★★★ |
+| Node.js Usability | ★★★★★ | ★★★★☆ | ★★★☆☆ |
+| File Management | ★★★★★ | ☆☆☆☆☆ | ☆☆☆☆☆ |
 
-##   Join the Community - MIT License
+---
 
-XDB.js is more than just a tool; it represents a forward-thinking approach to databases. Join the community and discover the ease of creating powerful applications. Released under the open-source MIT license, it's free to download, modify, and share!
+## 📁 Repository Structure
 
-## License
+```
+xdB/
+├── xdFiles/                    # Complete file management system
+│   ├── xdFiles.js             # Main library
+│   └── README.md              # Detailed documentation
+├── xdb-full/                   # Advanced JSON database
+│   ├── xdb.js                 # Main library  
+│   ├── tech-doc.md            # Technical documentation
+│   └── README.md              # User guide
+├── xdb-another-versions/       # Lightweight alternatives
+│   ├── xdbLite.js             # Balanced solution
+│   ├── xdbNano.js             # Minimalist engine
+│   ├── xdbLiteRelations.js    # Relations extension
+│   └── README.md              # Usage guide
+└── README.md                   # This file
+```
 
-XDB.js is released under the MIT License.
+---
+
+## 🏆 Why xdB is the Right Choice
+
+**🎯 Perfect Fit:** Choose exactly what you need - no more, no less  
+**🚀 Zero Dependencies:** All libraries work independently without external packages  
+**⚡ Performance Focused:** Optimized for Node.js with atomic operations and file locking  
+**📚 Well Documented:** Comprehensive documentation for every library  
+**🔧 Battle Tested:** Used in production applications and desktop software  
+**🆓 Open Source:** MIT licensed - free to use, modify, and distribute  
+
+Experience a significant boost in productivity with the right tool for your project!
+
+---
+
+## 🤝 Join the Community
+
+xdB is more than just a tool collection; it represents a forward-thinking approach to file and data management. Join the community and discover the ease of creating powerful applications with the perfect library for your needs.
+
+**Contributors welcome!** Whether you're fixing bugs, adding features, or improving documentation - every contribution makes xdB better for everyone.
+
+---
+
+## 📄 License
+
+xdB is released under the MIT License.
 
 ```
 MIT License
@@ -122,3 +365,9 @@ LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 ```
+
+---
+
+**Author:** Jakub Śledzikowski  
+**Email:** jsledzikowski.web@gmail.com  
+**Website:** [jsle.eu](https://jsle.eu)
